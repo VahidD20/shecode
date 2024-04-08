@@ -1,0 +1,101 @@
+/* global */
+body, h1 {
+    margin: 0;
+    font-family: "vazir";
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("fonts/Vazir-Thin-FD-WOL.woff") format("woff");
+}
+
+.wrapper{
+    max-width: 1800;
+    margin: 0 auto;
+}
+
+.main_header{
+    box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+    background: #fff;
+}
+
+.logo_menu::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.main_header .logo {
+    float: right;
+    position: relative;
+}
+.main_header .menu {
+    float: left;
+    margin-top: 9px;
+}
+
+.header_img {
+    width: 60px;
+    height: 60px;
+}
+
+.title {
+    position: absolute;
+    top: 6px;
+    right: 66px;
+    width: 72px;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .main_header .menu {
+      float: right;
+      padding-right: 88px;
+      margin-top: 19px;
+    }
+}
+.menu_list{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .menu_icon {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu_list {
+      display: block;
+    }
+  
+    .menu_list > li {
+      display: inline-block;
+      padding-left: 16px;
+    }
+  
+    .menu_list li:last-child {
+      padding-left: 0;
+    }
+}
+
+.submenu {
+    display: none;
+}
+  
+@media screen and (min-width: 992px) {
+    .menu_list > li:hover .submenu {
+      display: block;
+    }
+}
