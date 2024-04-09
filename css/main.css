@@ -17,7 +17,7 @@ a {
 
 @font-face {
     font-family: "vazir";
-    src: url("fonts/Vazir-Thin-FD-WOL.woff") format("woff");
+    src: url("../fonts/Vazir-Thin-FD-WOL.woff") format("woff");
 }
 
 .wrapper{
@@ -52,7 +52,7 @@ a {
 
 .title {
     position: absolute;
-    top: 6px;
+    top: 11px;
     right: 66px;
     width: 72px;
     font-size: 1.5rem;
@@ -67,6 +67,7 @@ a {
 }
 .menu_list{
     display: none;
+    position: relative;
 }
 
 @media screen and (min-width: 992px) {
@@ -92,6 +93,8 @@ a {
 
 .submenu {
     display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.2);
 }
   
 @media screen and (min-width: 992px) {
