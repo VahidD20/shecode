@@ -72,8 +72,12 @@ a {
 .menu_list{
     position: absolute;
     display: block;
-    top: 60px;
+    top: 93px;
     float: right;
+    right: 0;
+    width: 100%;
+    background: green;
+
 }
 
 .menu_icon{
@@ -109,6 +113,7 @@ a {
 .submenu {
     background-color: rgba(128, 128, 128, 0.2);
     position: relative;
+
 }
   
 @media screen and (min-width: 992px) {
@@ -116,3 +121,15 @@ a {
       display: block;
     }
 }
+
+.icon_home{
+
+    position: absolute;
+    float: right;
+    right: 0;
+    width: 100%;
+    top: 59px;
+    background: green;
+    border-bottom: 1px solid white;
+}
+
