@@ -11,8 +11,15 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+li {
+    padding-right: 10px;
+}
 
+.first-lits{
+    border-bottom: 1px solid white;
 }
 
 @font-face {
@@ -62,21 +69,15 @@ a {
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
-    .main_header .menu {
-      float: right;
-      padding-right: 88px;
-      margin-top: 19px;
-    }
-}
+
 .menu_list{
     position: absolute;
     display: block;
-    top: 93px;
+    top: 103px;
     float: right;
     right: 0;
     width: 100%;
-    background: green;
+    background: #008000;
 
 }
 
@@ -87,39 +88,11 @@ a {
     margin-top: 11px;
 }
 
-@media screen and (min-width: 992px) {
-    .menu_icon {
-      display: none;
-
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .menu_list {
-      display: block;
-      
-    }
-  
-    .menu_list > li {
-      display: inline-block;
-      padding-left: 16px;
-    }
-  
-    .menu_list li:last-child {
-      padding-left: 0;
-    }
-}
-
 .submenu {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: #008000;
     position: relative;
+    padding: 13px;
 
-}
-  
-@media screen and (min-width: 992px) {
-    .menu_list > li:hover .submenu {
-      display: block;
-    }
 }
 
 .icon_home{
@@ -129,7 +102,49 @@ a {
     right: 0;
     width: 100%;
     top: 59px;
-    background: green;
+    background: #008000;
     border-bottom: 1px solid white;
+    padding: 8px 10px;
 }
 
+@media screen and (min-width: 992px) {
+    .main_header .menu {
+      float: right;
+      padding-right: 88px;
+      margin-top: 19px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .menu_icon {
+      display: none;
+    }
+    .title{
+        display: inline;
+    }
+    .logo{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu_list {
+      display: inline-block;
+
+    }
+  
+    .menu_list > li {
+      display: inline-block;
+      padding-left: 16px;
+
+    }
+  
+    .menu_list li:last-child {
+      padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu_list > li:hover .submenu {
+      display: block;
+    }
+}
